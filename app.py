@@ -24,9 +24,7 @@ import plotly.graph_objects as go
 # CONFIGURATION
 # ============================================================================
 
-APP_PASSWORD = "vera2026"
-
-KS_BLUE = "#002855"
+APP_KS_BLUE = "#002855"
 KS_GOLD = "#FFB81C"
 KS_DARK_BLUE = "#001A3A"
 KS_LIGHT_BLUE = "#335C85"
@@ -930,9 +928,6 @@ def main():
         .stButton > button:hover {{ background-color: {KS_DARK_BLUE}; color: white; }}
     </style>
     """, unsafe_allow_html=True)
-
-    if not check_password():
-        return
 
     # Load all data
     districts_df = load_districts()
